@@ -225,6 +225,34 @@
             </objects>
             <point key="canvasLocation" x="118" y="1478"/>
         </scene>
+        <!--Table View Controller-->
+        <scene sceneID="yk5-v4-VwU">
+            <objects>
+                <tableViewController storyboardIdentifier="SIDE_DRAWER_CONTROLLER" id="G8g-wA-4lu" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="bMT-2x-Mfd">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="YbH-xc-Paj">
+                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="YbH-xc-Paj" id="0dv-z3-OBx">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="G8g-wA-4lu" id="MIB-Bx-U4R"/>
+                            <outlet property="delegate" destination="G8g-wA-4lu" id="4it-h2-fBP"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2bM-J2-cWV" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="929" y="789"/>
+        </scene>
         <!--View Controller-->
         <scene sceneID="xRE-8I-V4X">
             <objects>
@@ -261,7 +289,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FjU-H2-FcL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="929" y="789"/>
+            <point key="canvasLocation" x="1727" y="789"/>
         </scene>
         <!--Detail : XXX-->
         <scene sceneID="ssb-E1-gAZ">
@@ -281,7 +309,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="AQi-j0-SH0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1658" y="788"/>
+            <point key="canvasLocation" x="2489" y="806"/>
         </scene>
     </scenes>
 </document>
