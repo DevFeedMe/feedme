@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -208,14 +209,13 @@
                                 </items>
                             </navigationBar>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="Pizza_Hut_-_Triple_Treat_Box_-_Image_-_2015.11.6.0.0" translatesAutoresizingMaskIntoConstraints="NO" id="dRN-Ck-C5I">
-                                <rect key="frame" x="0.0" y="64" width="375" height="160"/>
+                                <rect key="frame" x="0.0" y="64" width="375" height="171"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="160" id="ORM-Ep-xhV"/>
                                 </constraints>
                             </imageView>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="fVY-vS-zX5">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="fVY-vS-zX5">
                                 <rect key="frame" x="0.0" y="243" width="375" height="424"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cel1" textLabel="cqk-Ae-QVq" style="IBUITableViewCellStyleDefault" id="NiG-9A-soW">
@@ -247,11 +247,19 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="I6w-PO-xPv" firstAttribute="top" secondItem="hql-tG-pRu" secondAttribute="bottom" id="6vd-dc-EqO"/>
+                            <constraint firstItem="dRN-Ck-C5I" firstAttribute="leading" secondItem="I6w-PO-xPv" secondAttribute="leading" id="ACO-Ld-OFL"/>
+                            <constraint firstItem="fVY-vS-zX5" firstAttribute="top" secondItem="dRN-Ck-C5I" secondAttribute="bottom" constant="8" id="EAr-Fo-YEv"/>
+                            <constraint firstItem="fVY-vS-zX5" firstAttribute="trailing" secondItem="dRN-Ck-C5I" secondAttribute="trailing" id="Qt7-WS-vKk"/>
                             <constraint firstItem="dRN-Ck-C5I" firstAttribute="leading" secondItem="elt-DU-JLf" secondAttribute="leading" id="TAw-ww-mSv"/>
                             <constraint firstItem="I6w-PO-xPv" firstAttribute="leading" secondItem="elt-DU-JLf" secondAttribute="leading" id="TME-6R-o3k"/>
                             <constraint firstItem="dRN-Ck-C5I" firstAttribute="top" secondItem="I6w-PO-xPv" secondAttribute="bottom" constant="10" id="Tuk-kY-ve3"/>
+                            <constraint firstItem="fVY-vS-zX5" firstAttribute="bottom" secondItem="Ius-QJ-Fup" secondAttribute="top" id="Wb9-O7-aM6"/>
                             <constraint firstAttribute="trailing" secondItem="dRN-Ck-C5I" secondAttribute="trailing" id="erc-Sr-gMV"/>
+                            <constraint firstItem="dRN-Ck-C5I" firstAttribute="trailing" secondItem="I6w-PO-xPv" secondAttribute="trailing" id="isF-Hm-4Yc"/>
+                            <constraint firstItem="fVY-vS-zX5" firstAttribute="leading" secondItem="elt-DU-JLf" secondAttribute="leadingMargin" constant="-16" id="lWx-bv-pca"/>
                             <constraint firstAttribute="trailing" secondItem="I6w-PO-xPv" secondAttribute="trailing" id="oiG-qV-8vM"/>
+                            <constraint firstItem="fVY-vS-zX5" firstAttribute="leading" secondItem="elt-DU-JLf" secondAttribute="leadingMargin" constant="-16" id="qe9-db-YaX"/>
+                            <constraint firstItem="fVY-vS-zX5" firstAttribute="leading" secondItem="elt-DU-JLf" secondAttribute="leadingMargin" constant="-16" id="zSr-vw-XFo"/>
                         </constraints>
                     </view>
                 </viewController>
@@ -295,10 +303,10 @@
             </objects>
             <point key="canvasLocation" x="118" y="2155"/>
         </scene>
-        <!--View Controller-->
+        <!--View Controller Food-->
         <scene sceneID="aLw-gY-Kjm">
             <objects>
-                <viewController id="JPN-qK-X24" sceneMemberID="viewController">
+                <viewController id="JPN-qK-X24" customClass="ViewControllerFood" customModule="FeedMe" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="vR9-vl-tsI"/>
                         <viewControllerLayoutGuide type="bottom" id="MhY-EC-lc9"/>
@@ -382,10 +390,22 @@
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" barStyle="black" translatesAutoresizingMaskIntoConstraints="NO" id="tu8-k2-Jkj">
+                                <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <items>
+                                    <navigationItem title="Title" id="XUb-V3-5FV">
+                                        <barButtonItem key="leftBarButtonItem" title="&lt;" id="Q5y-cj-aiL">
+                                            <connections>
+                                                <segue destination="lqR-8y-Nyn" kind="show" id="ojP-BJ-CCy"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" barStyle="black" prompted="NO"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FjU-H2-FcL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
