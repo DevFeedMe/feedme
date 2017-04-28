@@ -12,6 +12,7 @@
 		9A0797791EA0AC62005AB6B7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9A0797771EA0AC62005AB6B7 /* Main.storyboard */; };
 		9A07977B1EA0AC62005AB6B7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9A07977A1EA0AC62005AB6B7 /* Assets.xcassets */; };
 		9A07977E1EA0AC62005AB6B7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9A07977C1EA0AC62005AB6B7 /* LaunchScreen.storyboard */; };
+		9AEE550C1EB31BAD00836629 /* Size.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AEE550B1EB31BAD00836629 /* Size.swift */; };
 		9AF901311EB236E0005B6BB4 /* ViewControllerHome.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AF901301EB236E0005B6BB4 /* ViewControllerHome.swift */; };
 		9AF901331EB23A4E005B6BB4 /* Food.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AF901321EB23A4E005B6BB4 /* Food.swift */; };
 /* End PBXBuildFile section */
@@ -24,6 +25,7 @@
 		9A07977A1EA0AC62005AB6B7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9A07977D1EA0AC62005AB6B7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9A07977F1EA0AC62005AB6B7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9AEE550B1EB31BAD00836629 /* Size.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Size.swift; sourceTree = "<group>"; };
 		9AF901301EB236E0005B6BB4 /* ViewControllerHome.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerHome.swift; sourceTree = "<group>"; };
 		9AF901321EB23A4E005B6BB4 /* Food.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Food.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -66,6 +68,7 @@
 				9A07977F1EA0AC62005AB6B7 /* Info.plist */,
 				9AF901301EB236E0005B6BB4 /* ViewControllerHome.swift */,
 				9AF901321EB23A4E005B6BB4 /* Food.swift */,
+				9AEE550B1EB31BAD00836629 /* Size.swift */,
 			);
 			path = FeedMe;
 			sourceTree = "<group>";
@@ -143,6 +146,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9A0797761EA0AC62005AB6B7 /* ViewController.swift in Sources */,
+				9AEE550C1EB31BAD00836629 /* Size.swift in Sources */,
 				9AF901331EB23A4E005B6BB4 /* Food.swift in Sources */,
 				9AF901311EB236E0005B6BB4 /* ViewControllerHome.swift in Sources */,
 				9A0797741EA0AC62005AB6B7 /* AppDelegate.swift in Sources */,
